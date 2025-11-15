@@ -1,0 +1,13 @@
+[package]
+name = "common"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+# 公共依赖库
+# clap = { workspace = true }
+# serde = { workspace = true }
+
+[lib]
+name = "common"
+path = "src/lib.rs"

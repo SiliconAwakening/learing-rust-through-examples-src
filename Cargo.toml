@@ -1,0 +1,21 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "chapter01",
+    "chapter02",
+    "chapter03",
+    "common",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+
+[workspace.dependencies]
+# 在这里定义所有章节可能共用的依赖
+# 各个章节可以通过 workspace = true 来使用这些依赖
+clap = { version = "4.0", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.0", features = ["full"] }

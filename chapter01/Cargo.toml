@@ -1,0 +1,16 @@
+[package]
+name = "chapter01"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+# 本章节特定的依赖
+# 使用 workspace 定义的依赖：
+# clap = { workspace = true }
+
+# 引用公共库（如果需要）
+# common = { path = "../common" }
+
+[[bin]]
+name = "chapter01"
+path = "src/main.rs"

@@ -1,0 +1,48 @@
+# Rust 编译产物
+/target
+**/target
+
+# Cargo 锁文件（库项目通常不提交，但工作空间可以提交）
+# Cargo.lock
+
+# 备份文件
+**/*.rs.bk
+*.bk
+
+# IDE 和编辑器
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Rust 分析工具
+*.pdb
+
+# 测试覆盖率
+*.profraw
+*.profdata
+
+# 基准测试结果
+/bench
+
+# 文档构建产物
+/doc
+
+# 临时文件
+tmp/
+temp/
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 日志文件
+*.log
+
+# 环境变量文件
+.env
+.env.local
